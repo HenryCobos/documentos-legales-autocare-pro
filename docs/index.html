@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AutoCare Pro – Información legal y soporte</title>
+    <meta name="description" content="Enlaces a Política de Privacidad, Términos de Uso y Soporte de AutoCare Pro." />
+    <style>
+      :root { --primary:#1E88E5; --text:#333; --muted:#666; --bg:#fff; --border:#e5e7eb; }
+      html,body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
+      .container{max-width:860px;margin:0 auto;padding:24px}
+      header{margin-bottom:24px}
+      h1{font-size:28px;margin:0 0 8px}
+      p,li{line-height:1.6}
+      .card{border:1px solid var(--border);border-radius:12px;padding:16px;background:#fff}
+      a{color:var(--primary);text-decoration:none}
+      a:hover{text-decoration:underline}
+      footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+      .links a{display:inline-block;margin-right:12px}
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>AutoCare Pro – Sitio informativo</h1>
+        <p class="sub">Accesos rápidos a la documentación pública de la app.</p>
+      </header>
+
+      <section class="card">
+        <h2>Enlaces</h2>
+        <div class="links">
+          <p><a href="./privacy.html">Política de Privacidad</a></p>
+          <p><a href="./terms.html">Términos de Uso</a></p>
+          <p><a href="./support.html">Soporte</a></p>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="year"></span> AutoCare Pro. Todos los derechos reservados.
+      </footer>
+    </main>
+    <script>
+      document.getElementById('year').textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>
+
+

@@ -1,107 +1,313 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Política de Privacidad – AutoCare Pro</title>
-    <meta name="description" content="Política de Privacidad de AutoCare Pro para iOS." />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - AutoCare Pro</title>
     <style>
-      :root {
-        --primary: #1E88E5;
-        --text: #333;
-        --muted: #666;
-        --bg: #fff;
-        --border: #e5e7eb;
-      }
-      html, body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); }
-      .container { max-width: 860px; margin: 0 auto; padding: 24px; }
-      header { margin-bottom: 24px; }
-      h1 { font-size: 28px; margin: 0 0 8px; }
-      .sub { color: var(--muted); font-size: 14px; }
-      h2 { font-size: 20px; margin-top: 28px; }
-      p, li { line-height: 1.6; }
-      .card { border: 1px solid var(--border); border-radius: 12px; padding: 16px; background: #fff; }
-      a { color: var(--primary); text-decoration: none; }
-      a:hover { text-decoration: underline; }
-      footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 2px solid #1E88E5;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #1E88E5;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+        }
+        h2 {
+            color: #1E88E5;
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #333;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p, li {
+            margin-bottom: 12px;
+            color: #555;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .highlight {
+            background-color: #E3F2FD;
+            padding: 15px;
+            border-left: 4px solid #1E88E5;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid #ddd;
+            margin-top: 50px;
+            color: #666;
+            font-size: 14px;
+        }
+        .contact {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        strong {
+            color: #1E88E5;
+        }
+        a {
+            color: #1E88E5;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
-  </head>
-  <body>
-    <main class="container">
-      <header>
-        <h1>Política de Privacidad – AutoCare Pro (iOS)</h1>
-        <div class="sub">Fecha de entrada en vigor: <strong id="pp-date">13/08/2025</strong></div>
-      </header>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚗 AutoCare Pro</h1>
+            <h2>Política de Privacidad</h2>
+            <p class="subtitle">Última actualización: Octubre 2025</p>
+        </header>
 
-      <section class="card">
-        <h2>1) Quiénes somos</h2>
-        <p>AutoCare Pro es una aplicación móvil para iPhone que ayuda a gestionar mantenimientos, recordatorios y gastos de vehículos. Esta política explica cómo tratamos la información dentro de la app.</p>
-        <p>Contacto: <a href="mailto:apper2025@icloud.com">apper2025@icloud.com</a></p>
+        <div class="highlight">
+            <p><strong>En resumen:</strong> AutoCare Pro respeta tu privacidad. Todos tus datos de vehículos, mantenimientos y gastos se almacenan <strong>localmente en tu dispositivo</strong>. No recopilamos, almacenamos ni compartimos información personal identificable.</p>
+        </div>
 
-        <h2>2) Alcance</h2>
-        <p>Esta política aplica al uso de AutoCare Pro en iOS. La app funciona sin servidor propio (modo offline).</p>
+        <div class="section">
+            <h2>1. Información General</h2>
+            <p>Esta Política de Privacidad describe cómo AutoCare Pro ("nosotros", "nuestro" o "la aplicación") maneja la información cuando usas nuestra aplicación móvil disponible en iOS a través de la App Store de Apple.</p>
+            <p>Al descargar y usar AutoCare Pro, aceptas las prácticas descritas en esta política.</p>
+        </div>
 
-        <h2>3) Información que tratamos</h2>
-        <ul>
-          <li><strong>Datos ingresados por ti:</strong> vehículos (marca, modelo, año, placa, kilometraje, foto opcional), mantenimientos (tipo, fecha, costo, km, notas, foto opcional), gastos (tipo/categoría, descripción, monto, fecha, foto opcional), recordatorios (fecha/km objetivo, estado).</li>
-          <li><strong>Permisos del dispositivo (opcionales):</strong> cámara y fotos (adjuntar imágenes), calendario/recordatorios/notificaciones (programar alertas locales).</li>
-          <li><strong>Datos publicitarios (AdMob – Google Mobile Ads):</strong> identificadores publicitarios, IP aproximada, métricas de anuncios y señales antifraude necesarias. Consulta la política de Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.</li>
-        </ul>
+        <div class="section">
+            <h2>2. Información que Recopilamos</h2>
+            
+            <h3>2.1 Información que NO Recopilamos</h3>
+            <p>AutoCare Pro está diseñada con la privacidad como prioridad. <strong>NO recopilamos:</strong></p>
+            <ul>
+                <li>Nombre, correo electrónico o datos personales identificables</li>
+                <li>Ubicación geográfica (GPS)</li>
+                <li>Contactos del dispositivo</li>
+                <li>Datos de navegación web</li>
+                <li>Información de otros dispositivos o aplicaciones</li>
+            </ul>
 
-        <h2>4) Dónde y cómo se guardan los datos</h2>
-        <p>Tus registros (vehículos, mantenimientos, gastos y recordatorios) se guardan localmente en tu dispositivo (AsyncStorage). No subimos tus datos personales a servidores propios. Las notificaciones se programan localmente.</p>
+            <h3>2.2 Información que Almacenamos Localmente</h3>
+            <p>Los siguientes datos se almacenan <strong>exclusivamente en tu dispositivo</strong> usando almacenamiento local cifrado:</p>
+            <ul>
+                <li><strong>Información de vehículos:</strong> Marca, modelo, año, placa, kilometraje, fotos</li>
+                <li><strong>Registros de mantenimiento:</strong> Fecha, tipo, descripción, costo, fotos de facturas</li>
+                <li><strong>Gastos:</strong> Fecha, categoría, monto, descripción</li>
+                <li><strong>Recordatorios:</strong> Fechas y descripciones de mantenimientos programados</li>
+                <li><strong>Preferencias de la app:</strong> Configuración de notificaciones, moneda, unidades de medida</li>
+            </ul>
+            <p class="highlight">
+                <strong>Importante:</strong> Estos datos nunca salen de tu dispositivo. No se sincronizan con servidores externos ni se envían a terceros.
+            </p>
 
-        <h2>5) Finalidades del tratamiento</h2>
-        <ul>
-          <li>Prestar la funcionalidad principal de la app (registro/consulta de información y recordatorios).</li>
-          <li>Enviar notificaciones locales sobre mantenimientos programados.</li>
-          <li>Mostrar anuncios para financiar el desarrollo, cumpliendo políticas de Apple y AdMob.</li>
-        </ul>
+            <h3>2.3 Información de Suscripción</h3>
+            <p>Si decides suscribirte a un plan Pro o Premium, Apple procesa la información de pago a través de su sistema de In-App Purchase. Nosotros <strong>NO tenemos acceso</strong> a:</p>
+            <ul>
+                <li>Números de tarjeta de crédito/débito</li>
+                <li>Información bancaria</li>
+                <li>Datos de facturación completos</li>
+            </ul>
+            <p>Solo recibimos de Apple:</p>
+            <ul>
+                <li>Estado de suscripción (activa/inactiva)</li>
+                <li>Tipo de plan (Pro/Premium)</li>
+                <li>Fecha de renovación o expiración</li>
+                <li>ID de transacción anónimo (para soporte técnico)</li>
+            </ul>
+            <p>Esta información se gestiona a través de RevenueCat, un servicio de terceros que cumple con GDPR y SOC 2 Type II. Para más información, consulta la <a href="https://www.revenuecat.com/privacy" target="_blank">Política de Privacidad de RevenueCat</a>.</p>
+        </div>
 
-        <h2>6) Base legal</h2>
-        <p>Ejecución del servicio (funcionalidades principales). Interés legítimo/consentimiento para notificaciones y publicidad, según normativa aplicable.</p>
+        <div class="section">
+            <h2>3. Cómo Usamos la Información</h2>
+            <p>La información almacenada localmente en tu dispositivo se utiliza exclusivamente para:</p>
+            <ul>
+                <li><strong>Funcionalidad de la app:</strong> Mostrar tu historial de vehículos, mantenimientos y gastos</li>
+                <li><strong>Recordatorios:</strong> Enviarte notificaciones locales sobre mantenimientos programados</li>
+                <li><strong>Estadísticas:</strong> Generar gráficos y reportes basados en tus datos</li>
+                <li><strong>Exportación:</strong> Crear archivos PDF con tu información (solo en planes Pro/Premium)</li>
+            </ul>
+            <p><strong>NO usamos tus datos para:</strong></p>
+            <ul>
+                <li>Publicidad dirigida</li>
+                <li>Análisis de comportamiento</li>
+                <li>Venta o compartición con terceros</li>
+                <li>Perfilado o marketing</li>
+            </ul>
+        </div>
 
-        <h2>7) Terceros y transferencias</h2>
-        <p>Usamos Google AdMob (Google LLC) para anuncios. AdMob puede tratar ciertos datos para personalización, medición y prevención de fraude. No vendemos tus datos ni compartimos tus registros locales con terceros.</p>
+        <div class="section">
+            <h2>4. Compartición de Datos</h2>
+            <p><strong>NO compartimos, vendemos ni alquilamos tu información personal a terceros.</strong></p>
+            <p>Los únicos servicios de terceros con los que interactuamos son:</p>
+            
+            <h3>4.1 Apple App Store</h3>
+            <p>Para procesar suscripciones y compras in-app. Apple maneja todos los datos de pago según su <a href="https://www.apple.com/legal/privacy/" target="_blank">Política de Privacidad</a>.</p>
 
-        <h2>8) Publicidad y control del usuario</h2>
-        <p>Puedes limitar el rastreo publicitario en iOS desde Ajustes del sistema. Cuando sea exigible, solicitaremos tu consentimiento para anuncios personalizados y respetaremos tu elección.</p>
+            <h3>4.2 RevenueCat</h3>
+            <p>Para gestionar el estado de suscripciones. Solo recibe identificadores anónimos y estado de suscripción, nunca información personal o datos de vehículos.</p>
+        </div>
 
-        <h2>9) Retención y eliminación</h2>
-        <p>Tus datos permanecen en tu dispositivo hasta que los borres o desinstales la app. En Configuración puedes “Limpiar todos los datos”. Al desinstalar la app, iOS elimina los datos locales asociados.</p>
+        <div class="section">
+            <h2>5. Permisos de la Aplicación</h2>
+            <p>AutoCare Pro solicita los siguientes permisos de iOS:</p>
 
-        <h2>10) Seguridad</h2>
-        <p>Al no existir backend propio, reducimos la exposición. Aun así, protege tu dispositivo (código/bio) y evita almacenar información sensible en notas o fotos.</p>
+            <h3>5.1 Cámara y Galería de Fotos</h3>
+            <p><strong>Por qué:</strong> Para que puedas tomar fotos de facturas, comprobantes de mantenimiento o tus vehículos.</p>
+            <p><strong>Cómo se usa:</strong> Las fotos se almacenan localmente en tu dispositivo, nunca se suben a servidores externos.</p>
+            <p><strong>Opcional:</strong> Puedes usar la app sin conceder este permiso, pero no podrás adjuntar fotos.</p>
 
-        <h2>11) Menores</h2>
-        <p>La app no está dirigida a menores. No recopilamos intencionadamente datos de menores de 13/16 años (según jurisdicción).</p>
+            <h3>5.2 Notificaciones</h3>
+            <p><strong>Por qué:</strong> Para enviarte recordatorios sobre mantenimientos programados.</p>
+            <p><strong>Cómo se usa:</strong> Las notificaciones se generan localmente en tu dispositivo según los recordatorios que configures.</p>
+            <p><strong>Opcional:</strong> Puedes desactivar las notificaciones en cualquier momento desde Ajustes de iOS o dentro de la app.</p>
+        </div>
 
-        <h2>12) Tus derechos</h2>
-        <p>Puedes acceder, editar y eliminar tus datos en la app. Para consultas adicionales, contáctanos en <a href="mailto:apper2025@icloud.com">apper2025@icloud.com</a>.</p>
+        <div class="section">
+            <h2>6. Seguridad de los Datos</h2>
+            <p>Implementamos medidas de seguridad para proteger tu información:</p>
+            <ul>
+                <li><strong>Almacenamiento cifrado:</strong> Los datos se guardan usando el sistema de cifrado de iOS (Keychain y AsyncStorage)</li>
+                <li><strong>Sin servidores:</strong> Al no enviar datos a servidores externos, eliminamos vectores de ataque comunes</li>
+                <li><strong>Aislamiento de app:</strong> iOS garantiza que otras aplicaciones no puedan acceder a los datos de AutoCare Pro</li>
+                <li><strong>Respaldos seguros:</strong> Si usas iCloud Backup, tus datos se respaldan cifrados según las políticas de Apple</li>
+            </ul>
+        </div>
 
-        <h2>13) Cambios</h2>
-        <p>Podemos actualizar esta política. Indicaremos la fecha de vigencia y, si corresponde, te avisaremos en la app.</p>
+        <div class="section">
+            <h2>7. Retención y Eliminación de Datos</h2>
+            
+            <h3>7.1 Control Total</h3>
+            <p>Tienes control total sobre tus datos en todo momento:</p>
+            <ul>
+                <li>Puedes editar o eliminar cualquier vehículo, mantenimiento o gasto desde la app</li>
+                <li>Puedes exportar todos tus datos a PDF antes de eliminarlos</li>
+                <li>Puedes limpiar todos los datos desde Configuración → "Limpiar Todos los Datos"</li>
+            </ul>
 
-        <h2>14) Información adicional por región</h2>
-        <ul>
-          <li><strong>UE/EEE (RGPD):</strong> puedes ejercer derechos de acceso, rectificación, supresión, limitación, oposición y portabilidad. También ante tu autoridad de control.</li>
-          <li><strong>California (CCPA/CPRA):</strong> no vendemos datos personales. Puedes ejercer tus derechos contactándonos.</li>
-        </ul>
+            <h3>7.2 Desinstalación</h3>
+            <p>Si desinstalas AutoCare Pro, <strong>todos tus datos se eliminan automáticamente</strong> del dispositivo según las políticas de iOS. No quedan copias en servidores externos porque nunca se enviaron allí.</p>
 
-        <h2>15) Contacto</h2>
-        <p>Email: <a href="mailto:apper2025@icloud.com">apper2025@icloud.com</a></p>
-      </section>
+            <h3>7.3 Cancelación de Suscripción</h3>
+            <p>Si cancelas tu suscripción Pro o Premium:</p>
+            <ul>
+                <li>Tus datos locales NO se eliminan automáticamente</li>
+                <li>Puedes seguir viendo tu información (modo solo lectura en plan Free)</li>
+                <li>Puedes exportar tus datos antes de que expire la suscripción</li>
+            </ul>
+        </div>
 
-      <footer>
-        © <span id="year"></span> AutoCare Pro. Todos los derechos reservados.
-      </footer>
-    </main>
-    <script>
-      const y = new Date();
-      document.getElementById('year').textContent = String(y.getFullYear());
-      // document.getElementById('pp-date').textContent = y.toLocaleDateString('es-ES');
-    </script>
-  </body>
+        <div class="section">
+            <h2>8. Privacidad de Menores</h2>
+            <p>AutoCare Pro no está diseñada para menores de 13 años. No recopilamos intencionalmente información de niños menores de 13 años. Si eres padre/madre y descubres que tu hijo ha proporcionado información personal, contáctanos y la eliminaremos.</p>
+        </div>
+
+        <div class="section">
+            <h2>9. Tus Derechos (GDPR / CCPA)</h2>
+            <p>Aunque no recopilamos datos personales identificables, respetamos tus derechos bajo GDPR y CCPA:</p>
+            <ul>
+                <li><strong>Acceso:</strong> Puedes ver todos tus datos dentro de la app en cualquier momento</li>
+                <li><strong>Corrección:</strong> Puedes editar cualquier dato desde la app</li>
+                <li><strong>Eliminación:</strong> Puedes eliminar datos específicos o todos desde la app</li>
+                <li><strong>Exportación:</strong> Puedes exportar tus datos a PDF (planes Pro/Premium)</li>
+                <li><strong>Oposición:</strong> Como no procesamos datos personales para marketing, no aplica</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>10. Cambios en esta Política</h2>
+            <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Te notificaremos de cambios significativos mediante:</p>
+            <ul>
+                <li>Una notificación dentro de la app</li>
+                <li>Actualización de la fecha "Última actualización" en la parte superior</li>
+                <li>Aviso en las notas de actualización de la App Store</li>
+            </ul>
+            <p>El uso continuado de la app después de cambios constituye aceptación de la política actualizada.</p>
+        </div>
+
+        <div class="section">
+            <h2>11. Enlaces a Terceros</h2>
+            <p>AutoCare Pro no contiene enlaces a sitios web o servicios de terceros dentro de la funcionalidad principal. Los únicos enlaces externos son:</p>
+            <ul>
+                <li>Esta política de privacidad</li>
+                <li>Términos de servicio</li>
+                <li>Página de soporte</li>
+            </ul>
+            <p>No somos responsables de las prácticas de privacidad de sitios externos.</p>
+        </div>
+
+        <div class="section">
+            <h2>12. Transferencias Internacionales</h2>
+            <p>Como todos tus datos se almacenan localmente en tu dispositivo, no hay transferencias internacionales de datos. Los únicos datos que salen de tu dispositivo son:</p>
+            <ul>
+                <li>Información de suscripción a RevenueCat (servidores en EE.UU., cumple con Privacy Shield)</li>
+                <li>Datos de pago procesados por Apple según su ubicación</li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h2>13. Contacto</h2>
+            <p>Si tienes preguntas sobre esta Política de Privacidad o sobre cómo manejamos tus datos, contáctanos:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:privacy@autocarepro.app">privacy@autocarepro.app</a></li>
+                <li><strong>Soporte:</strong> <a href="support.html">Página de Soporte</a></li>
+                <li><strong>Sitio Web:</strong> <a href="index.html">autocarepro.app</a></li>
+            </ul>
+            <p>Responderemos a tu consulta dentro de 48 horas hábiles.</p>
+        </div>
+
+        <div class="highlight">
+            <h3>🔒 Compromiso de Privacidad</h3>
+            <p>En AutoCare Pro, creemos que tus datos de vehículos y mantenimiento son <strong>exclusivamente tuyos</strong>. Por eso diseñamos la app para que toda la información permanezca en tu dispositivo, bajo tu control total. No monetizamos tus datos, no los vendemos, y no los compartimos. Nuestro único ingreso proviene de las suscripciones opcionales que mejoran tu experiencia.</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 AutoCare Pro. Todos los derechos reservados.</p>
+            <p>
+                <a href="index.html">Inicio</a> | 
+                <a href="terms.html">Términos de Servicio</a> | 
+                <a href="support.html">Soporte</a>
+            </p>
+        </footer>
+    </div>
+</body>
 </html>
-
-

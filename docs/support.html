@@ -1,49 +1,394 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Soporte – AutoCare Pro</title>
-    <meta name="description" content="Soporte y contacto de AutoCare Pro." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte - AutoCare Pro</title>
     <style>
-      :root { --primary:#1E88E5; --text:#333; --muted:#666; --bg:#fff; --border:#e5e7eb; }
-      html,body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
-      .container{max-width:860px;margin:0 auto;padding:24px}
-      header{margin-bottom:24px}
-      h1{font-size:28px;margin:0 0 8px}
-      p{line-height:1.6}
-      .card{border:1px solid var(--border);border-radius:12px;padding:16px;background:#fff}
-      a{color:var(--primary);text-decoration:none}
-      a:hover{text-decoration:underline}
-      footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
-      .links a{display:inline-block;margin-right:12px}
-      .hint{color:var(--muted);font-size:14px}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 2px solid #1E88E5;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #1E88E5;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #1E88E5;
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #333;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p, li {
+            margin-bottom: 12px;
+            color: #555;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .faq-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #1E88E5;
+            margin-bottom: 15px;
+        }
+        .faq-item h3 {
+            margin-top: 0;
+            color: #1E88E5;
+        }
+        .contact-box {
+            background-color: #E3F2FD;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .contact-box a {
+            display: inline-block;
+            background-color: #1E88E5;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .contact-box a:hover {
+            background-color: #1565C0;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid #ddd;
+            margin-top: 50px;
+            color: #666;
+            font-size: 14px;
+        }
+        strong {
+            color: #1E88E5;
+        }
+        a {
+            color: #1E88E5;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .steps {
+            counter-reset: step-counter;
+            list-style: none;
+            margin-left: 0;
+        }
+        .steps li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 50px;
+            position: relative;
+        }
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #1E88E5;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
     </style>
   </head>
   <body>
-    <main class="container">
+    <div class="container">
       <header>
-        <h1>Soporte – AutoCare Pro</h1>
+            <h1>🚗 AutoCare Pro</h1>
+            <h2>Centro de Soporte</h2>
+            <p>Estamos aquí para ayudarte</p>
       </header>
 
-      <section class="card">
-        <p>¿Necesitas ayuda con la app? Escríbenos y con gusto te apoyamos.</p>
-        <p><strong>Email:</strong> <a href="mailto:apper2025@icloud.com">apper2025@icloud.com</a></p>
-        <p class="hint">Atendemos consultas de lunes a viernes en horario laboral (UTC-6). Incluye detalles de tu dispositivo y los pasos para reproducir el problema.</p>
-
-        <h2>Recursos</h2>
-        <div class="links">
-          <a href="./privacy.html">Política de Privacidad</a>
-          <a href="./terms.html">Términos de Uso</a>
+        <div class="contact-box">
+            <p><strong>¿Necesitas ayuda inmediata?</strong></p>
+            <a href="mailto:support@autocarepro.app">📧 Enviar Email</a>
+            <p style="margin-top: 15px; font-size: 14px;">Tiempo de respuesta: 24-48 horas hábiles</p>
         </div>
-      </section>
 
-      <footer>© <span id="year"></span> AutoCare Pro. Todos los derechos reservados.</footer>
-    </main>
-    <script>
-      document.getElementById('year').textContent = String(new Date().getFullYear());
-    </script>
+        <div class="section">
+            <h2>📚 Preguntas Frecuentes (FAQ)</h2>
+
+            <div class="faq-item">
+                <h3>¿Cómo agrego mi primer vehículo?</h3>
+                <ul class="steps">
+                    <li>Abre la app y ve a la pestaña "Vehículos"</li>
+                    <li>Toca el botón "+" en la esquina superior derecha</li>
+                    <li>Completa la información: marca, modelo, año, placa, kilometraje</li>
+                    <li>Opcionalmente, toma una foto de tu vehículo</li>
+                    <li>Toca "Guardar" para crear el vehículo</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Cómo registro un mantenimiento?</h3>
+                <p>Existen dos formas:</p>
+                <p><strong>Método 1 - Desde el vehículo:</strong></p>
+                <ul>
+                    <li>Ve a "Vehículos" y selecciona tu vehículo</li>
+                    <li>Toca la pestaña "Mantenimientos"</li>
+                    <li>Toca el botón "+"</li>
+                </ul>
+                <p><strong>Método 2 - Desde Mantenimientos:</strong></p>
+                <ul>
+                    <li>Ve a la pestaña "Mantenimientos" en la barra inferior</li>
+                    <li>Toca el botón "+" en la esquina superior</li>
+                    <li>Selecciona el vehículo y completa los detalles</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Cómo configuro recordatorios?</h3>
+                <ul class="steps">
+                    <li>Registra un mantenimiento normalmente</li>
+                    <li>Activa el switch "Programar recordatorio"</li>
+                    <li>Selecciona la fecha en que quieres que te recuerde</li>
+                    <li>La app te enviará una notificación en esa fecha</li>
+                </ul>
+                <p><strong>Nota:</strong> Asegúrate de tener activadas las notificaciones en Ajustes de iOS.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Cómo exporto mis datos a PDF?</h3>
+                <p><strong>Requisito:</strong> Plan Pro o Premium</p>
+                <ul class="steps">
+                    <li>Ve a "Configuración" (pestaña de ajustes)</li>
+                    <li>Toca "Exportar Datos" → "Exportar a PDF"</li>
+                    <li>Elige qué incluir: vehículos, mantenimientos, gastos</li>
+                    <li>Toca "Generar PDF"</li>
+                    <li>Comparte el archivo mediante email, WhatsApp, etc.</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Cómo actualizo a Pro o Premium?</h3>
+                <ul class="steps">
+                    <li>Ve a "Configuración"</li>
+                    <li>Toca "Gestionar Suscripción"</li>
+                    <li>Elige el plan que prefieras (Pro o Premium)</li>
+                    <li>Selecciona pago mensual o anual (anual incluye 7 días gratis)</li>
+                    <li>Confirma la compra con Face ID / Touch ID / Contraseña</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Cómo cancelo mi suscripción?</h3>
+                <p>Las suscripciones se gestionan a través de tu cuenta de Apple:</p>
+                <ul class="steps">
+                    <li>Abre la app "Ajustes" de iOS</li>
+                    <li>Toca tu nombre en la parte superior</li>
+                    <li>Toca "Suscripciones"</li>
+                    <li>Busca "AutoCare Pro" en la lista</li>
+                    <li>Toca "Cancelar Suscripción"</li>
+                </ul>
+                <p><strong>Nota:</strong> Seguirás teniendo acceso hasta que termine el período pagado.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Mis datos están seguros?</h3>
+                <p>¡Absolutamente! AutoCare Pro almacena todos tus datos <strong>localmente en tu dispositivo</strong>. No los enviamos a servidores externos ni los compartimos con terceros.</p>
+                <p><strong>Recomendación:</strong> Activa iCloud Backup en tu iPhone para respaldar automáticamente los datos de la app.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Qué pasa si cambio de teléfono?</h3>
+                <ul class="steps">
+                    <li>Asegúrate de tener activado iCloud Backup en tu iPhone actual</li>
+                    <li>Ve a Ajustes → [tu nombre] → iCloud → Copia de Seguridad</li>
+                    <li>Toca "Realizar copia ahora"</li>
+                    <li>En tu nuevo iPhone, restaura desde tu copia de iCloud durante la configuración inicial</li>
+                    <li>Descarga AutoCare Pro de la App Store</li>
+                    <li>Tus datos deberían restaurarse automáticamente</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Puedo usar AutoCare Pro en iPad?</h3>
+                <p>Actualmente AutoCare Pro está optimizada solo para iPhone. Puedes instalarla en iPad, pero la experiencia no está optimizada para pantallas grandes. Estamos considerando una versión para iPad en el futuro.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Cuál es la diferencia entre Pro y Premium?</h3>
+                <table style="width: 100%; margin-top: 10px;">
+                    <tr>
+                        <th style="text-align: left;">Característica</th>
+                        <th style="text-align: center;">Pro</th>
+                        <th style="text-align: center;">Premium</th>
+                    </tr>
+                    <tr>
+                        <td>Vehículos</td>
+                        <td style="text-align: center;">5</td>
+                        <td style="text-align: center;">Ilimitados</td>
+                    </tr>
+                    <tr>
+                        <td>Mantenimientos/mes</td>
+                        <td style="text-align: center;">25</td>
+                        <td style="text-align: center;">Ilimitados</td>
+                    </tr>
+                    <tr>
+                        <td>Gastos/mes</td>
+                        <td style="text-align: center;">75</td>
+                        <td style="text-align: center;">Ilimitados</td>
+                    </tr>
+                    <tr>
+                        <td>Fotos por registro</td>
+                        <td style="text-align: center;">10</td>
+                        <td style="text-align: center;">Ilimitadas</td>
+                    </tr>
+                    <tr>
+                        <td>Exportar a PDF</td>
+                        <td style="text-align: center;">✅</td>
+                        <td style="text-align: center;">✅</td>
+                    </tr>
+                    <tr>
+                        <td>Precio Anual</td>
+                        <td style="text-align: center;">$49.99/año</td>
+                        <td style="text-align: center;">$99.99/año</td>
+                    </tr>
+                </table>
+                <p style="margin-top: 10px;"><strong>Recomendación:</strong> Si tienes 1-2 vehículos de uso personal, Pro es suficiente. Premium es ideal para talleres, flotas pequeñas o entusiastas con múltiples vehículos.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>No recibo notificaciones de recordatorios</h3>
+                <p>Verifica lo siguiente:</p>
+                <ul>
+                    <li><strong>Permisos:</strong> Ve a Ajustes → AutoCare Pro → Notificaciones y asegúrate de que estén activadas</li>
+                    <li><strong>Modo No Molestar:</strong> Desactívalo o configura excepciones para AutoCare Pro</li>
+                    <li><strong>Batería Baja:</strong> El modo de ahorro de energía puede retrasar notificaciones</li>
+                    <li><strong>Fecha correcta:</strong> Verifica que programaste el recordatorio para una fecha futura</li>
+                </ul>
+                <p>Si el problema persiste, contacta soporte.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>¿Puedo recuperar datos eliminados?</h3>
+                <p>Si eliminaste un vehículo, mantenimiento o gasto <strong>sin querer</strong>:</p>
+                <ul>
+                    <li>Si tienes iCloud Backup activo, puedes restaurar desde una copia anterior</li>
+                    <li>Si exportaste a PDF recientemente, tendrás los datos allí (solo lectura)</li>
+                    <li>Si no hiciste ninguna de las anteriores, lamentablemente no podemos recuperar los datos porque se almacenan solo en tu dispositivo</li>
+                </ul>
+                <p><strong>Recomendación:</strong> Exporta regularmente tus datos a PDF como respaldo.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🐛 Reportar un Problema</h2>
+            <p>Si encontraste un error o la app no funciona correctamente, ayúdanos a resolverlo:</p>
+            <ol>
+                <li>Envía un email a: <a href="mailto:support@autocarepro.app">support@autocarepro.app</a></li>
+                <li>Incluye la siguiente información:
+                    <ul>
+                        <li>Modelo de tu iPhone (ej: iPhone 13 Pro)</li>
+                        <li>Versión de iOS (ve a Ajustes → General → Información)</li>
+                        <li>Versión de AutoCare Pro (en Configuración, al final)</li>
+                        <li>Descripción detallada del problema</li>
+                        <li>Pasos para reproducir el error</li>
+                        <li>Capturas de pantalla (si es posible)</li>
+                    </ul>
+                </li>
+                <li>Responderemos dentro de 24-48 horas hábiles</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>💡 Sugerencias de Características</h2>
+            <p>¿Tienes una idea para mejorar AutoCare Pro? ¡Nos encantaría escucharla!</p>
+            <p>Envíanos tu sugerencia a: <a href="mailto:feedback@autocarepro.app">feedback@autocarepro.app</a></p>
+            <p>Incluye:</p>
+            <ul>
+                <li>Descripción de la característica que te gustaría</li>
+                <li>Por qué crees que sería útil</li>
+                <li>Cómo la usarías en tu caso particular</li>
+            </ul>
+            <p>Leemos todas las sugerencias y las consideramos para futuras actualizaciones.</p>
+        </div>
+
+        <div class="section">
+            <h2>💰 Solicitar Reembolso</h2>
+            <p>Los reembolsos se gestionan directamente a través de Apple:</p>
+            <ul class="steps">
+                <li>Ve a <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a></li>
+                <li>Inicia sesión con tu Apple ID</li>
+                <li>Busca AutoCare Pro en tu historial de compras</li>
+                <li>Selecciona "Reportar un Problema"</li>
+                <li>Elige el motivo del reembolso y envía la solicitud</li>
+                <li>Apple revisará tu solicitud (usualmente en 48 horas)</li>
+            </ul>
+            <p><strong>Nota:</strong> Los reembolsos dependen de la política de Apple y no están garantizados. Si tienes problemas técnicos, contáctanos primero para intentar resolverlos.</p>
+        </div>
+
+        <div class="section">
+            <h2>📱 Requisitos del Sistema</h2>
+            <ul>
+                <li><strong>Plataforma:</strong> iOS</li>
+                <li><strong>Versión mínima:</strong> iOS 13.0 o superior</li>
+                <li><strong>Dispositivos compatibles:</strong> iPhone 6s o posterior</li>
+                <li><strong>Espacio requerido:</strong> ~50 MB (+ espacio para fotos)</li>
+                <li><strong>Idiomas:</strong> Español</li>
+            </ul>
+        </div>
+
+        <div class="contact-box">
+            <h2>¿Aún necesitas ayuda?</h2>
+            <p>No encontraste respuesta a tu pregunta? Contáctanos:</p>
+            <a href="mailto:support@autocarepro.app">📧 support@autocarepro.app</a>
+            <p style="margin-top: 15px; font-size: 14px;">Nuestro equipo responderá lo antes posible</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 AutoCare Pro. Todos los derechos reservados.</p>
+            <p>
+                <a href="index.html">Inicio</a> | 
+                <a href="privacy.html">Política de Privacidad</a> | 
+                <a href="terms.html">Términos de Servicio</a>
+            </p>
+        </footer>
+    </div>
   </body>
 </html>
-
-
